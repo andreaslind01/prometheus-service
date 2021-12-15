@@ -19,7 +19,7 @@ require (
 	github.com/mitchellh/mapstructure v1.2.2 // indirect
 	github.com/prometheus/alertmanager v0.21.0
 	github.com/prometheus/common v0.10.0
-	github.com/prometheus/prometheus v0.0.0-20200326161412-ae041f97cfc6
+	github.com/prometheus/prometheus v1.8.2
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0
 	k8s.io/api v0.17.3
