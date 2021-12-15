@@ -297,6 +297,9 @@ func (eh ConfigureMonitoringEventHandler) updatePrometheusConfigMap(eventData ke
 							criteriaString = strings.Replace(criteriaString, ">", "<", -1)
 						}
 
+						// remove whitespaces
+						criteriaString = strings.Replace(criteriaString, " ", "", -1)
+
 						var newAlertingRule *alertingRule
 						ruleName := objective.SLI
 						newAlertingRule = getAlertingRuleOfGroup(alertingGroupConfig, ruleName)
